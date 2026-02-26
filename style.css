@@ -142,27 +142,11 @@ button{
 /* ---------------- FOOTER ---------------- */
 
 footer{
+
     text-align:center;
     padding:20px;
     margin-top:40px;
     color:#666;
-}
-.menu {
-    background-color: #111;
-    padding: 15px;
-    text-align: center;
-}
-
-.menu a {
-    color: white;
-    text-decoration: none;
-    margin: 0 20px;
-    font-weight: bold;
-    font-size: 16px;
-}
-
-.menu a:hover {
-    color: gold;
 }
 header p {
     font-size: 18px;
@@ -181,4 +165,22 @@ header button {
 
 header button:hover {
     background-color: darkred;
+}
+.menu{
+    background: linear-gradient(90deg,#ff7a00,#22c55e);
+    padding:15px;
+    text-align:center;
+}
+
+.menu a{
+    color:white;
+    text-decoration:none;
+    margin:0 25px;
+    font-weight:600;
+    font-size:16px;
+    transition:0.3s;
+}
+
+.menu a:hover{
+    color:#111;
 }
