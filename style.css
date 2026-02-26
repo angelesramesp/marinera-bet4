@@ -1,0 +1,184 @@
+/* IMPORTAR FUENTE BONITA */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins', sans-serif;
+}
+
+/* FONDO GENERAL CLARO */
+body{
+    background: linear-gradient(135deg,#fff7ed,#f0fdf4);
+    color:#333;
+}
+
+/* ---------------- HEADER ---------------- */
+
+header{
+    background: linear-gradient(90deg,#ff7a00,#22c55e);
+    padding:20px 40px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    color:white;
+}
+
+header h1{
+    font-weight:600;
+    font-size:22px;
+}
+
+/* ---------------- BOTONES GENERALES ---------------- */
+
+button{
+    padding:12px 20px;
+    border:none;
+    border-radius:10px;
+    font-weight:600;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+/* BOTÓN PRINCIPAL (verde suave) */
+.btn-principal{
+    background:#22c55e;
+    color:white;
+}
+
+.btn-principal:hover{
+    background:#16a34a;
+    transform:scale(1.05);
+}
+
+/* BOTÓN SECUNDARIO (naranja) */
+.btn-secundario{
+    background:#ff7a00;
+    color:white;
+}
+
+.btn-secundario:hover{
+    background:#ea580c;
+    transform:scale(1.05);
+}
+
+/* ---------------- LOGIN / REGISTRO ---------------- */
+
+.login-body{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:100vh;
+}
+
+.login-box{
+    background:white;
+    padding:40px;
+    width:350px;
+    border-radius:20px;
+    box-shadow:0 10px 30px rgba(0,0,0,0.1);
+    text-align:center;
+}
+
+.login-box h2{
+    margin-bottom:20px;
+    color:#ff7a00;
+}
+
+.login-box input{
+    width:100%;
+    padding:12px;
+    margin:10px 0;
+    border:1px solid #ddd;
+    border-radius:10px;
+}
+
+/* ---------------- MENU PRINCIPAL ---------------- */
+
+.menu-grid{
+    display:grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap:30px;
+    padding:60px;
+}
+
+.menu-card{
+    background:white;
+    padding:40px;
+    text-align:center;
+    border-radius:20px;
+    font-size:18px;
+    font-weight:500;
+    box-shadow:0 8px 20px rgba(0,0,0,0.08);
+    transition:0.3s;
+}
+
+.menu-card:hover{
+    background:linear-gradient(135deg,#ff7a00,#22c55e);
+    color:white;
+    transform:translateY(-5px);
+}
+
+/* ---------------- INICIO ---------------- */
+
+.inicio-body{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:100vh;
+}
+
+.inicio-box{
+    text-align:center;
+}
+
+.portada{
+    width:300px;
+    border-radius:20px;
+    margin-bottom:20px;
+}
+
+/* ---------------- FOOTER ---------------- */
+
+footer{
+    text-align:center;
+    padding:20px;
+    margin-top:40px;
+    color:#666;
+}
+.menu {
+    background-color: #111;
+    padding: 15px;
+    text-align: center;
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+    margin: 0 20px;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.menu a:hover {
+    color: gold;
+}
+header p {
+    font-size: 18px;
+    margin: 10px 0;
+    color: gold;
+}
+
+header button {
+    padding: 8px 15px;
+    border: none;
+    background-color: crimson;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+header button:hover {
+    background-color: darkred;
+}

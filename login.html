@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Login</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body class="login-body">
+
+<div class="login-box">
+<h2>Iniciar Sesión</h2>
+
+<input type="email" id="correo">
+<input type="password" id="password">
+
+<label>
+<input type="checkbox" onclick="mostrarPassword()"> Mostrar contraseña
+</label>
+
+<p id="mensaje" style="color:red;"></p>
+
+<button onclick="login()">Ingresar</button>
+
+<a href="registro.html">Registrarse</a>
+</div>
+
+<script>
+function mostrarPassword(){
+  let p = document.getElementById("password");
+  p.type = p.type === "password" ? "text" : "password";
+}
+
+function login(){
+  let correo = document.getElementById("correo").value;
+  let pass = document.getElementById("password").value;
+
+  let guardado = localStorage.getItem("usuario");
+  let clave = localStorage.getItem("clave");
+
+  if(correo === guardado && pass === clave){
+      window.location.href="principal.html";
+  } else {
+      document.getElementById("mensaje").innerText="Correo o contraseña incorrecta.";
+  }
+}
+</script>
+
+</body>
+</html>
